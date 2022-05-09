@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Control.Strategy;
 using BlackJackV2.Business.Model;
 using BlackJackV2.Variables;
@@ -21,6 +22,7 @@ public class CpuStrategyTests
         {
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Spades, CardRank.Ace),
                 new Card(CardSuit.Clubs, CardRank.Ace)
             ),
@@ -31,6 +33,7 @@ public class CpuStrategyTests
         {
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Spades, CardRank.Ace),
                 new Card(CardSuit.Clubs, CardRank.Ace),
                 new Card(CardSuit.Clubs, CardRank.Five)
@@ -42,6 +45,7 @@ public class CpuStrategyTests
         {
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Spades, CardRank.Ten),
                 new Card(CardSuit.Clubs, CardRank.Ten),
                 new Card(CardSuit.Diamonds, CardRank.Ten)

@@ -3,9 +3,9 @@ using BlackJackV2.Variables;
 
 namespace BlackJackV2.Business.Control.CardFunctions;
 
-public static class CardQuery
+public class BlackJackCardValue : ICardValue
 {
-    public static int GetCardValue(Card card)
+    public int GetValue(Card card)
     {
         Dictionary<CardRank, int> playingCardValues = new()
         {
@@ -27,5 +27,3 @@ public static class CardQuery
         return playingCardValues[card.Rank];
     }
 }
-
-

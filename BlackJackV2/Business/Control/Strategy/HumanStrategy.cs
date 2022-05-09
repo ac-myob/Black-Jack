@@ -1,4 +1,3 @@
-using BlackJackV2.Business.Control.HandFunctions;
 using BlackJackV2.Business.Model;
 using BlackJackV2.Business.View.IO;
 using BlackJackV2.Exceptions;
@@ -25,7 +24,7 @@ public class HumanStrategy : IStrategy
 
     public bool ChoosesToHit(Hand hand)
     {
-        if (HandQuery.GetValue(hand) > Constants.BustThreshold) 
+        if (hand.GetValue() > Constants.BustThreshold) 
             return false;
         
         _writer.Write(Messages.GetHumanMove);

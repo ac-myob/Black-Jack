@@ -1,4 +1,3 @@
-using BlackJackV2.Business.Control.HandFunctions;
 using BlackJackV2.Business.Model;
 
 namespace BlackJackV2.Business.Control.PointManager;
@@ -10,11 +9,11 @@ public class PointManager : IPointManager
         var humanPlayer = players.GetPlayers().First();
         var cpuPlayer = players.GetPlayers().Last();
 
-        if (HandQuery.IsBust(humanPlayer.Hand))
+        if (humanPlayer.Hand.IsBust())
             ++cpuPlayer.Points;
-        else if (HandQuery.IsBust(cpuPlayer.Hand))
+        else if (cpuPlayer.Hand.IsBust())
             ++humanPlayer.Points;
-        else if (HandQuery.GetValue(humanPlayer.Hand) != HandQuery.GetValue(cpuPlayer.Hand))
-            ++players.GetPlayers().MaxBy(p => HandQuery.GetValue(p.Hand))!.Points;
+        else if (humanPlayer.Hand.GetValue() != cpuPlayer.Hand.GetValue())
+            ++players.GetPlayers().MaxBy(p => p.Hand.GetValue())!.Points;
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Control.Strategy;
 using BlackJackV2.Business.Model;
 using Xunit;
@@ -12,7 +13,7 @@ public class PlayersTests
     [Fact]
     public void AddPlayer_AddsAPlayerToPlayersList_WhenGivenAPlayer()
     {
-        var player = new Player("Alice", new Hand(), new DummyStrategy());
+        var player = new Player("Alice", new Hand(new BlackJackCardValue()), new DummyStrategy());
         var players = new Players();
 
         players.AddPlayer(player);
@@ -23,8 +24,8 @@ public class PlayersTests
     [Fact]
     public void GetCurrentPlayer_ReturnsCurrentPlayer()
     {
-        var player1 = new Player("Alice", new Hand(), new DummyStrategy());
-        var player2 = new Player("Bob", new Hand(), new DummyStrategy());
+        var player1 = new Player("Alice", new Hand(new BlackJackCardValue()), new DummyStrategy());
+        var player2 = new Player("Bob", new Hand(new BlackJackCardValue()), new DummyStrategy());
         var players = new Players();
         players.AddPlayer(player1);
         players.AddPlayer(player2);
@@ -37,8 +38,8 @@ public class PlayersTests
     [Fact]
     public void SwitchToNextPlayer_SetsCurrentPlayerToNextPlayer()
     {
-        var player1 = new Player("Alice", new Hand(), new DummyStrategy());
-        var player2 = new Player("Bob", new Hand(), new DummyStrategy());
+        var player1 = new Player("Alice", new Hand(new BlackJackCardValue()), new DummyStrategy());
+        var player2 = new Player("Bob", new Hand(new BlackJackCardValue()), new DummyStrategy());
         var players = new Players();
         players.AddPlayer(player1);
         players.AddPlayer(player2);
@@ -52,8 +53,8 @@ public class PlayersTests
     [Fact]
     public void GetWinner_ReturnsNull_WhenPlayersHaveTheSamePoints()
     {
-        var player1 = new Player("Alice", new Hand(), new DummyStrategy());
-        var player2 = new Player("Bob", new Hand(), new DummyStrategy());
+        var player1 = new Player("Alice", new Hand(new BlackJackCardValue()), new DummyStrategy());
+        var player2 = new Player("Bob", new Hand(new BlackJackCardValue()), new DummyStrategy());
         var players = new Players();
         players.AddPlayer(player1);
         players.AddPlayer(player2);
@@ -78,8 +79,8 @@ public class PlayersTests
         {
             new Player[]
             {
-                new ("Alice", new Hand(), new DummyStrategy()) { Points = 1 },
-                new ("Bob", new Hand(), new DummyStrategy()) 
+                new ("Alice", new Hand(new BlackJackCardValue()), new DummyStrategy()) { Points = 1 },
+                new ("Bob", new Hand(new BlackJackCardValue()), new DummyStrategy()) 
             },
             0
         };
@@ -88,8 +89,8 @@ public class PlayersTests
         {
             new Player[]
             {
-                new ("Alice", new Hand(), new DummyStrategy()),
-                new ("Bob", new Hand(), new DummyStrategy())  { Points = 1 }
+                new ("Alice", new Hand(new BlackJackCardValue()), new DummyStrategy()),
+                new ("Bob", new Hand(new BlackJackCardValue()), new DummyStrategy())  { Points = 1 }
             },
             1
         };

@@ -1,3 +1,4 @@
+using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Control.DeckFunctions;
 using BlackJackV2.Business.Control.GameService.Deserializer;
 using BlackJackV2.Business.Control.GameService.Serializer;
@@ -35,8 +36,8 @@ public class GameService : IGameService
         _writer.Write(Messages.GetNumRounds);
         gameState.TotalRounds = _query.GetInt(Constants.MinRounds, invalidInputMsg: Messages.InvalidInputRound);
         
-        gameState.Players.AddPlayer(new Player(Constants.HumanName, new Hand(), new HumanStrategy(_reader, _writer)));
-        gameState.Players.AddPlayer(new Player(Constants.CpuName, new Hand(), new CpuStrategy()));
+        gameState.Players.AddPlayer(new Player(Constants.HumanName, new Hand(new BlackJackCardValue()), new HumanStrategy(_reader, _writer)));
+        gameState.Players.AddPlayer(new Player(Constants.CpuName, new Hand(new BlackJackCardValue()), new CpuStrategy()));
         
         _SetPlayersHand(gameState);
 

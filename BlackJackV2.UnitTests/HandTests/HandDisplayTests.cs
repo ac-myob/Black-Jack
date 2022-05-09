@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Model;
 using BlackJackV2.Variables;
 using Xunit;
@@ -20,6 +21,7 @@ public class HandDisplayTests
         {
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Spades, CardRank.Ace),
                 new Card(CardSuit.Clubs, CardRank.Ace)
             ),
@@ -30,6 +32,7 @@ public class HandDisplayTests
         {
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Hearts, CardRank.Seven),
                 new Card(CardSuit.Clubs, CardRank.Nine)
             ),

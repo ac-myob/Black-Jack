@@ -1,7 +1,6 @@
 using BlackJackV2.Business.Control.GameInfo;
 using BlackJackV2.Business.Control.GameService.Deserializer;
 using BlackJackV2.Business.Control.GameService.Serializer;
-using BlackJackV2.Business.Control.HandFunctions;
 using BlackJackV2.Business.Control.PointManager;
 using BlackJackV2.Business.Model;
 using BlackJackV2.Business.View.IO;
@@ -73,7 +72,7 @@ public class GameEngine
                 }
             } while (hit);
             
-            if (HandQuery.IsBust(currentPlayer.Hand)) return;
+            if (currentPlayer.Hand.IsBust()) return;
 
             _currentGameState.Players.SwitchToNextPlayer();
         }

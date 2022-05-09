@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Control.DeckFunctions;
 using BlackJackV2.Business.Control.GameService.Service;
 using BlackJackV2.Business.Control.Strategy;
@@ -45,8 +46,8 @@ public class GameServiceTests
         var rng = new Random();
         var deck = new DeckFactory().GetDeck();
         var players = new Players();
-        var player1 = new Player("Alice", new Hand(), new DummyStrategy());
-        var player2 = new Player("Bob", new Hand(), new DummyStrategy());
+        var player1 = new Player("Alice", new Hand(new BlackJackCardValue()), new DummyStrategy());
+        var player2 = new Player("Bob", new Hand(new BlackJackCardValue()), new DummyStrategy());
         var totalRounds = rng.Next(1, 101);
         var currentRound = rng.Next(1, totalRounds + 1);
     

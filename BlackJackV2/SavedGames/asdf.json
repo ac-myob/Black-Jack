@@ -8,12 +8,27 @@
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 3,
-          "Rank": 11
+          "Rank": 1
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 3,
+          "Rank": 5
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 0,
+          "Rank": 0
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 1,
-          "Rank": 12
+          "Rank": 8
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 4
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
@@ -23,22 +38,17 @@
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 3,
-          "Rank": 7
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 3
+          "Rank": 11
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 2,
-          "Rank": 7
+          "Rank": 4
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 1,
-          "Rank": 6
+          "Rank": 9
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
@@ -47,18 +57,18 @@
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 4
+          "Suit": 2,
+          "Rank": 2
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 0,
-          "Rank": 0
+          "Suit": 2,
+          "Rank": 5
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 0,
-          "Rank": 4
+          "Suit": 2,
+          "Rank": 8
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
@@ -67,8 +77,73 @@
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 0,
+          "Rank": 9
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 3,
+          "Rank": 8
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 3,
+          "Rank": 3
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 0,
+          "Rank": 11
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 10
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 2,
+          "Rank": 3
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 7
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 2
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 2,
+          "Rank": 0
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 3
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 0,
+          "Rank": 10
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 2,
           "Rank": 11
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 5
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 0,
+          "Rank": 2
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
@@ -77,7 +152,7 @@
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 3,
+          "Suit": 1,
           "Rank": 12
         },
         {
@@ -87,28 +162,8 @@
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 3,
-          "Rank": 3
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 2,
-          "Rank": 5
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 2,
-          "Rank": 8
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 0
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 3,
-          "Rank": 8
+          "Suit": 0,
+          "Rank": 1
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
@@ -117,17 +172,32 @@
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 0,
+          "Rank": 6
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 3,
-          "Rank": 0
+          "Rank": 6
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 6
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 2,
+          "Rank": 9
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 3,
+          "Rank": 7
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 0,
-          "Rank": 3
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 3,
           "Rank": 5
         },
         {
@@ -142,103 +212,38 @@
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 2,
-          "Rank": 9
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 3,
           "Rank": 9
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 11
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 3,
-          "Rank": 1
+          "Rank": 12
         },
         {
           "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
           "Suit": 1,
-          "Rank": 9
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 2,
-          "Rank": 1
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 8
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 3,
-          "Rank": 2
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 0,
-          "Rank": 5
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 7
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 0,
-          "Rank": 9
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 0,
-          "Rank": 11
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 2
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 2,
-          "Rank": 2
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 0,
-          "Rank": 6
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 0,
-          "Rank": 10
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 1,
-          "Rank": 5
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 3,
-          "Rank": 6
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 2,
-          "Rank": 6
-        },
-        {
-          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-          "Suit": 2,
           "Rank": 0
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 1,
+          "Rank": 11
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 2,
+          "Rank": 6
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 0,
+          "Rank": 4
+        },
+        {
+          "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
+          "Suit": 2,
+          "Rank": 1
         }
       ]
     }
@@ -253,23 +258,21 @@
           "Name": "Contestant",
           "Hand": {
             "$type": "BlackJackV2.Business.Model.Hand, BlackJackV2",
+            "_cardValue": {
+              "$type": "BlackJackV2.Business.Control.CardFunctions.BlackJackCardValue, BlackJackV2"
+            },
             "_cards": {
               "$type": "System.Collections.Generic.List`1[[BlackJackV2.Business.Model.Card, BlackJackV2]], System.Private.CoreLib",
               "$values": [
                 {
                   "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
                   "Suit": 2,
-                  "Rank": 3
+                  "Rank": 7
                 },
                 {
                   "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-                  "Suit": 2,
-                  "Rank": 4
-                },
-                {
-                  "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-                  "Suit": 1,
-                  "Rank": 10
+                  "Suit": 3,
+                  "Rank": 0
                 }
               ]
             }
@@ -299,18 +302,21 @@
           "Name": "Dealer",
           "Hand": {
             "$type": "BlackJackV2.Business.Model.Hand, BlackJackV2",
+            "_cardValue": {
+              "$type": "BlackJackV2.Business.Control.CardFunctions.BlackJackCardValue, BlackJackV2"
+            },
             "_cards": {
               "$type": "System.Collections.Generic.List`1[[BlackJackV2.Business.Model.Card, BlackJackV2]], System.Private.CoreLib",
               "$values": [
                 {
                   "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
                   "Suit": 0,
-                  "Rank": 2
+                  "Rank": 3
                 },
                 {
                   "$type": "BlackJackV2.Business.Model.Card, BlackJackV2",
-                  "Suit": 0,
-                  "Rank": 1
+                  "Suit": 3,
+                  "Rank": 2
                 }
               ]
             }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Control.Strategy;
 using BlackJackV2.Business.Model;
 using BlackJackV2.Business.View.IO;
@@ -25,6 +26,7 @@ public class HumanStrategyTests
             "y",
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Spades, CardRank.Ace),
                 new Card(CardSuit.Clubs, CardRank.Ace)
             ),
@@ -36,7 +38,8 @@ public class HumanStrategyTests
             "n",
             new Hand
             (
-            new Card(CardSuit.Spades, CardRank.Ace),
+                new BlackJackCardValue(),
+                new Card(CardSuit.Spades, CardRank.Ace),
                 new Card(CardSuit.Clubs, CardRank.Ace)
             ),
             false
@@ -47,6 +50,7 @@ public class HumanStrategyTests
             "y",
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Spades, CardRank.Ten),
                 new Card(CardSuit.Clubs, CardRank.Ten),
                 new Card(CardSuit.Diamonds, CardRank.Ten)
@@ -59,6 +63,7 @@ public class HumanStrategyTests
             "n",
             new Hand
             (
+                new BlackJackCardValue(),
                 new Card(CardSuit.Spades, CardRank.Ten),
                 new Card(CardSuit.Clubs, CardRank.Ten),
                 new Card(CardSuit.Diamonds, CardRank.Ten)

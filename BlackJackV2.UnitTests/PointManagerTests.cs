@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Control.PointManager;
 using BlackJackV2.Business.Control.Strategy;
 using BlackJackV2.Business.Model;
@@ -26,7 +27,8 @@ public class PointManagerTests
                 new Player(
                     "Alice", 
                     new Hand(
-                        new Card(CardSuit.Diamonds, CardRank.Ten),
+                            new BlackJackCardValue(),
+                            new Card(CardSuit.Diamonds, CardRank.Ten),
                             new Card(CardSuit.Clubs, CardRank.Ten),
                             new Card(CardSuit.Clubs, CardRank.Four)
                         ),
@@ -35,6 +37,7 @@ public class PointManagerTests
                 new Player(
                     "Bob", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Diamonds, CardRank.Seven),
                         new Card(CardSuit.Clubs, CardRank.King),
                         new Card(CardSuit.Clubs, CardRank.Jack)
@@ -51,6 +54,7 @@ public class PointManagerTests
                 new Player(
                     "Alice", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Diamonds, CardRank.Ten),
                         new Card(CardSuit.Clubs, CardRank.Ten),
                         new Card(CardSuit.Clubs, CardRank.Four)
@@ -60,6 +64,7 @@ public class PointManagerTests
                 new Player(
                     "Bob", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Clubs, CardRank.King),
                         new Card(CardSuit.Clubs, CardRank.Jack)
                     ),
@@ -75,6 +80,7 @@ public class PointManagerTests
                 new Player(
                     "Alice", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Diamonds, CardRank.Ten),
                         new Card(CardSuit.Clubs, CardRank.Ten),
                         new Card(CardSuit.Clubs, CardRank.Ace)
@@ -84,6 +90,7 @@ public class PointManagerTests
                 new Player(
                     "Bob", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Clubs, CardRank.King),
                         new Card(CardSuit.Clubs, CardRank.Jack)
                     ),
@@ -99,6 +106,7 @@ public class PointManagerTests
                 new Player(
                     "Alice", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Diamonds, CardRank.Ten),
                         new Card(CardSuit.Clubs, CardRank.Ten)
                     ),
@@ -107,6 +115,7 @@ public class PointManagerTests
                 new Player(
                     "Bob", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Clubs, CardRank.King),
                         new Card(CardSuit.Clubs, CardRank.Jack)
                     ),
@@ -122,6 +131,7 @@ public class PointManagerTests
                 new Player(
                     "Alice", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Clubs, CardRank.Ten),
                         new Card(CardSuit.Clubs, CardRank.Four)
                     ),
@@ -130,6 +140,7 @@ public class PointManagerTests
                 new Player(
                     "Bob", 
                     new Hand(
+                        new BlackJackCardValue(),
                         new Card(CardSuit.Clubs, CardRank.King),
                         new Card(CardSuit.Clubs, CardRank.Jack)
                     ),

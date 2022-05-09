@@ -1,4 +1,3 @@
-using BlackJackV2.Business.Control.HandFunctions;
 using BlackJackV2.Business.Model;
 
 namespace BlackJackV2.Variables;
@@ -9,7 +8,7 @@ public static class Messages
     public const string LoadGameFile = $"Would you like to load an existing game? [{Constants.Yes}/{Constants.No}]: ";
     public const string LoadGameFilename = "Please type in game filename to load from: ";
     public static readonly Func<string, Hand, string> GetPlayerHandValue = (playerName, playerHand) 
-        => $"\n{playerName} is currently at {HandQuery.GetValue(playerHand)} {(HandQuery.IsBust(playerHand) ? "(bust)" : "")}\n";
+        => $"\n{playerName} is currently at {playerHand.GetValue()} {(playerHand.IsBust() ? "(bust)" : "")}\n";
     public static readonly Func<Hand, string> GetPlayerHand = playerHand 
         => $"with the hand {playerHand}\n";
     public static readonly Func<string, Card, string> GetDrawnCard = (playerName, playerCard) 
