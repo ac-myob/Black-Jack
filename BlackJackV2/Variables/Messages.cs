@@ -1,4 +1,3 @@
-using BlackJackV2.Business.Control.CardFunctions;
 using BlackJackV2.Business.Control.HandFunctions;
 using BlackJackV2.Business.Model;
 
