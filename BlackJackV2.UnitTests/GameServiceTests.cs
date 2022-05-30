@@ -54,8 +54,11 @@ public class GameServiceTests
         foreach (var player in new[] {player1, player2})
         {
             players.AddPlayer(player);
-            for (var i = 2; i <= rng.Next(2,6); i++)
+            for (var i = 2; i <= rng.Next(2, 6); i++)
+            {
                 player.Hand.AddCards(deck.GetTopCard());
+                deck.RemoveTopCard();
+            }
         }
         
         return new GameState

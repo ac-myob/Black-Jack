@@ -48,7 +48,11 @@ public class GameService : IGameService
     {
         foreach (var player in gameState.Players.GetPlayers())
             for (var _ = 0; _ < Constants.NumOfStartingCards; _++)
+            {
                 player.Hand.AddCards(gameState.Deck.GetTopCard());
+                gameState.Deck.RemoveTopCard();
+            }
+
     }
 
     public void ResetGameRound(GameState gameState)

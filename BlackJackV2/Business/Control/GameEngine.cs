@@ -63,6 +63,7 @@ public class GameEngine
                     hit = currentPlayer.Strategy.ChoosesToHit(currentPlayer.Hand);
                     if (!hit) continue;
                     var drawnCard = _currentGameState.Deck.GetTopCard();
+                    _currentGameState.Deck.RemoveTopCard();
                     currentPlayer.Hand.AddCards(drawnCard);
                     _writer.Write(Messages.GetDrawnCard(currentPlayer.Name, drawnCard));
                 }

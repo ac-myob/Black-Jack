@@ -11,14 +11,25 @@ namespace BlackJackV2.Tests;
 public class DeckTests
 {
     [Fact]
-    public void GetTopCard_ReturnsAndRemovesTopCardFromDeck()
+    public void GetTopCard_ReturnsTopCardFromDeck()
     {
         var expectedTopCard = new Card(CardSuit.Spades, CardRank.Ace);
         var deck = new MockDeckFactory(expectedTopCard).GetDeck();
 
         var actualTopCard = deck.GetTopCard();
-        
+
         Assert.Equal(expectedTopCard, actualTopCard);
+    }
+    
+    [Fact]
+    public void RemoveTopCard_RemovesTopCardFromDeck()
+    {
+        var expectedTopCard = new Card(CardSuit.Spades, CardRank.Ace);
+        var deck = new MockDeckFactory(expectedTopCard).GetDeck();
+
+        deck.RemoveTopCard();
+
+        Assert.Empty(deck.GetCards());
     }
 
     [Fact]

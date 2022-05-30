@@ -23,11 +23,13 @@ public class Deck
         if (_cards.Count < 1)
             throw new EmptyDeckException();
         
+        return _cards[^1];
+    }
+
+    public void RemoveTopCard()
+    {
         var topCardIndex = _cards.Count - 1;
-        var topCard = _cards[topCardIndex];
         _cards.RemoveAt(topCardIndex);
-        
-        return topCard;
     }
     
     public void AddCards(params Card[] cards)
