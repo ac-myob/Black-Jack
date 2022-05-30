@@ -13,7 +13,7 @@ public class DeckTests
     [Fact]
     public void GetTopCard_ReturnsAndRemovesTopCardFromDeck()
     {
-        var expectedTopCard = new Card(rank: CardRank.Ace, suit: CardSuit.Spades);
+        var expectedTopCard = new Card(CardSuit.Spades, CardRank.Ace);
         var deck = new MockDeckFactory(expectedTopCard).GetDeck();
 
         var actualTopCard = deck.GetTopCard();
