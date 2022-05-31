@@ -3,10 +3,10 @@ using BlackJackV2.Variables;
 
 namespace BlackJackV2.Business.Control.Strategy;
 
-public class CpuStrategy : IStrategy
+public class ComputerStrategy : IStrategy
 {
     public bool ChoosesToHit(Hand hand)
     {
-        return hand.GetValue() < Constants.CpuHitThreshold;
+        return hand.GetValue() < Constants.ComputerHitThreshold;
     }
 }

@@ -37,7 +37,7 @@ public class GameService : IGameService
         gameState.TotalRounds = _query.GetInt(Constants.MinRounds, invalidInputMsg: Messages.InvalidInputRound);
         
         gameState.Players.AddPlayer(new Player(Constants.HumanName, new Hand(new BlackJackCardValue()), new HumanStrategy(_reader, _writer)));
-        gameState.Players.AddPlayer(new Player(Constants.CpuName, new Hand(new BlackJackCardValue()), new CpuStrategy()));
+        gameState.Players.AddPlayer(new Player(Constants.ComputerName, new Hand(new BlackJackCardValue()), new ComputerStrategy()));
         
         _SetPlayersHand(gameState);
 

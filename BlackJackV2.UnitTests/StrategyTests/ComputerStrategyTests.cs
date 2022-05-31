@@ -7,13 +7,13 @@ using Xunit;
 
 namespace BlackJackV2.Tests.StrategyTests;
 
-public class CpuStrategyTests
+public class ComputerStrategyTests
 {
     [Theory]
     [MemberData(nameof(QueryHitTestData))]
     public void QueryHit_ReturnsTrueIfCpuHandLessThanCpuBustThreshold_WhenGivenHand(Hand hand, bool expectedBool)
     {
-        Assert.True(new CpuStrategy().ChoosesToHit(hand) == expectedBool);
+        Assert.True(new ComputerStrategy().ChoosesToHit(hand) == expectedBool);
     }
 
     public static IEnumerable<object[]> QueryHitTestData()
